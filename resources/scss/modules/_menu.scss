@@ -1,0 +1,52 @@
+.sidebar{
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+
+    .img-logo{
+        width: 80%;
+        margin-left: calc(50% - 40%);
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            padding: .5rem 1rem;
+            border-radius: 0.5rem;
+            list-style: none;
+
+            &.active{
+                background-color: $verde;
+                
+                a{
+                    color: $branco;
+                }
+            }
+            a{
+                text-decoration: none;
+                color: $verde;
+            }
+
+            &::marker{
+                visibility: hidden;
+            }
+        }
+    }
+}
+
+hr:not([size]) {
+    height: 0.05rem;
+}
+
+.btn-primary{
+    background-color: $verde;
+    border: none;
+
+    &:hover{
+        border: 1px solid $verde;
+        background-color: $branco;
+        color: $verde;
+    }
+}
